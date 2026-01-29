@@ -1,59 +1,77 @@
-# UnivekWebsite
+# 🧬 Projeto: UniVek
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Um Website Angular 19x focado em gerenciar notas e faltas de matérias acadêmicas. O site não possui autenticação ou mesmo backend, é focado em dar um resumo geral com exportação de dados via arquivo.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📘 Estrutura do Projeto
 
-```bash
-ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+📂 univek-website/
+├── 📁 public                               ← Notebook principal
+├── 📁 src/                                 ← Pasta raiz do projeto (Source)
+    ├── 📁 app/                             ← Pasta princípal do projeto (Application)
+        ├── 📁 layout/                      ← Layout geral da aplicação (Templates)
+        ├── 📁 pages/                       ← Páginas do site
+        ├── 📁 shared/                      ← Módulo compartilhado entre todas as páginas
+            ├── 📁 models/                  ← Entidades utilizadas por todo o sistema
+            ├── 📁 services/                ← Serviços de requisição HTTP e LocalStorage
+    ├── 📁 environments/                    ← Variáveis de Ambiente
+├── 📄 README.md                            ← Este arquivo de documentação
 
-## Code scaffolding
+````
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
+
+## 🧩 Tecnologias Utilizadas
+
+- **Angular 19** → Framework Frontend
+- **Jest** → Testes unitários
+- **Sweet Alert 2** → Exibição de Alertas personalizados
+- **Material Design** → Biblioteca de componentes
+
+---
+
+## 📦 Instalação e Configuração do Ambiente
+
+### 1️⃣ Clone o projeto na sua máquina e baixe as dependências:
+```bash
+# Clonar
+git clone https://github.com/vek03/victor-rickmorty-ui.git
+
+# Entrar na pasta clonada
+cd victor-rickmorty-ui
+
+# Instalar as dependências do Node.js
+npm install
+````
+
+### 2️⃣ Rode o projeto
 
 ```bash
-ng generate component component-name
+npm run start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Abra o navegador no [Localhost](http://localhost:4200).
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 💡 Observações Importantes
 
-To build the project run:
+* O projeto é **não possui backend próprio**
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## ✍️ Autores
 
-## Running unit tests
+**Projeto desenvolvido por:**
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+<div align="center">
 
-```bash
-ng test
-```
+| [<img src="https://avatars.githubusercontent.com/u/98980071" width=115><br><sub>Victor Cardoso</sub>](https://github.com/vek03)
+| :---: |
 
-## Running end-to-end tests
+</div>
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
