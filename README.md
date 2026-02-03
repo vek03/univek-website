@@ -38,10 +38,10 @@ Um Website Angular 19x focado em gerenciar notas e faltas de matérias acadêmic
 ### 1️⃣ Clone o projeto na sua máquina e baixe as dependências:
 ```bash
 # Clonar
-git clone https://github.com/vek03/victor-rickmorty-ui.git
+git clone https://github.com/vek03/univek-website.git
 
 # Entrar na pasta clonada
-cd victor-rickmorty-ui
+cd univek-website
 
 # Instalar as dependências do Node.js
 npm install

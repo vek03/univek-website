@@ -1,0 +1,71 @@
+@use '@angular/material' as mat;
+
+// =========================
+// PALETA VERMELHA (PRIMARY)
+// =========================
+$red-educacional: (
+  50:  #fdecea,
+  100: #f8cfc9,
+  200: #f1998e,
+  300: #ee6f63,
+  400: #ea4c3b,
+  500: #e63946, // principal
+  600: #d32f3c,
+  700: #b02a37,
+  800: #8f222d,
+  900: #7a1c24,
+  contrast: (
+    50:  #000,
+    100: #000,
+    200: #000,
+    300: #fff,
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff
+  )
+);
+
+// =========================
+// PALETA CINZA (NEUTRA)
+// =========================
+$gray-educacional: (
+  50:  #f9fafb,
+  100: #f1f3f5,
+  200: #e4e7eb,
+  300: #cfd4da,
+  400: #adb5bd,
+  500: #6c757d,
+  600: #495057,
+  700: #343a40,
+  800: #212529,
+  900: #121417,
+  contrast: (
+    50:  #000,
+    100: #000,
+    200: #000,
+    300: #000,
+    400: #000,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff
+  )
+);
+
+$primary: mat.define-palette($red-educacional, 500);
+$accent: mat.define-palette($gray-educacional, 600);
+$warn: mat.define-palette(mat.$red-palette);
+
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn
+  )
+));
+
+@include mat.all-component-themes($theme);
